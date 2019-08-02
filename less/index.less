@@ -55,31 +55,43 @@ table {
 }
 
 html, body{
-    height: 100%;
+	height: 100%;
+	background: lightgrey;
 }
 
 /* Begin new code */
 
 #textcolor{
-	color: darkgray;
+	color: black;
 }
 
 #headerfont{
 	font-family: 'Permanent Marker', cursive;
 	#textcolor;
-	font-size: 50px;
+	font-size: 3.5rem;
+	line-height: 1.5em;
+	
 }
 
 #textfont{
 	font-family: 'Cutive Mono', monospace;
 	#textcolor;
 	font-size: 20px;
-	padding-left: 45px;
+	line-height: 1.5em;
 }
 
 .maincontainer{
 	width: 1200px;
 	margin: auto;
+	border-left: solid grey 2px;
+	border-right: solid grey 2px;
+	padding: 15px;
+	
+}
+
+h2 {
+	#headerfont;
+	font-size: 1.8rem;
 }
 
 p {
@@ -91,29 +103,71 @@ header nav{
 	justify-content: flex-end;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	border-bottom: solid grey 1px;
 }
 
-header nav a {
+header nav a{
 	text-decoration: none;
+	margin-left: 75px;
 	#textfont;
+	transition: all .2s ease-in-out;
 }
 
-.container {
-	background-color: #b1edae;
+header nav a:hover{
+	color: black;
+	transform: scale(1.1)
+	
+}
+
+.reachout{
+	display: flex;
+	flex-direction: column;
+	padding: 25px;
+}
+
+.reachout button {
+	margin: 25px;
+}
+
+.button1{
+	border: solid grey 2px;
+	width: 200px;
+	height: 75px;
+	transition-duration: .5s;
+	#textfont;
+	align-self: auto
+}
+
+.button1:hover {
+	
+	background-color: lightcyan;
+	transform: scale(1.1)
+	
 }
 
 .container h1{
 	#headerfont;
 }
 
-.section1 img {
-	
-}
-
-.section1 {
+.subcont1 {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: nowrap;
+	border-bottom: solid grey 1px;
+	padding-bottom: 15px;
+	margin: 25px;
 }
+
+.subcont1 p {
+	padding-top: 25px;
+}
+
+img {
+	width: 500px;
+	height: 500px;
+}
+
+
 
 
 @media (max-width: 600px) {
@@ -129,8 +183,6 @@ header nav a {
 	header nav {
 		display: flex;
 		flex-direction: column;
-
-		
 	}
 
 	header nav a {
