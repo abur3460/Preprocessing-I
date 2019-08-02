@@ -50,10 +50,102 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: white;
 }
 
-html, body {
+html, body{
     height: 100%;
 }
+
+/* Begin new code */
+
+#textcolor{
+	color: darkgray;
+}
+
+#headerfont{
+	font-family: 'Permanent Marker', cursive;
+	#textcolor;
+	font-size: 50px;
+}
+
+#textfont{
+	font-family: 'Cutive Mono', monospace;
+	#textcolor;
+	font-size: 20px;
+	padding-left: 45px;
+}
+
+.maincontainer{
+	width: 1200px;
+	margin: auto;
+}
+
+p {
+	#textfont;
+}
+
+header nav{
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+header nav a {
+	text-decoration: none;
+	#textfont;
+}
+
+.container {
+	background-color: #b1edae;
+}
+
+.container h1{
+	#headerfont;
+}
+
+.section1 img {
+	
+}
+
+.section1 {
+	display: flex;
+	flex-direction: row;
+}
+
+
+@media (max-width: 600px) {
+	.maincontainer {
+		width: 400px;
+		margin: auto;
+	}
+
+	.container h1 {
+		font-size: 25px;
+	}
+
+	header nav {
+		display: flex;
+		flex-direction: column;
+
+		
+	}
+
+	header nav a {
+		text-decoration: none;
+		#textfont;
+		border-bottom: solid lightgrey 1px;
+		
+	}
+
+	header nav a:nth-child(1){
+		border-top: solid lightgrey 1px;
+	}
+
+
+}
+
+
 
